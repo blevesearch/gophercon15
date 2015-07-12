@@ -1,0 +1,8 @@
+=============== Jul 8, 2015 (MDT) ===============
+12:16:17.517119 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+12:16:17.518762 db@open opening
+12:16:17.518882 journal@recovery F·1
+12:16:17.519256 journal@recovery recovering @67
+12:16:17.520368 db@janitor F·6 G·1
+12:16:17.520392 db@janitor removing table-69
+12:16:17.520499 db@open done T·1.710654ms

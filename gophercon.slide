@@ -1,0 +1,80 @@
+Bleve
+Full-Text Indexing and Search for Go
+10 Jul 2015
+
+Marty Schoch
+marty@couchbase.com
+http://github.com/blevesearch/bleve
+http://www.blevesearch.com/
+@mschoch
+@blevesearch
+
+* Why?
+.html why.html
+- Lucene/Solr/Elasticsearch are awesome
+- Could we build 50% of Lucene's text analysis, combine it with off-the-shelf KV stores and get something interesting?
+
+* Install bleve
+.html goget.html
+
+* Import
+.code -numbers index.go /START OMIT/,/END OMIT/ HLIMPORT
+
+* Data Model
+.code -numbers index.go /START OMIT/,/END OMIT/ HLMODEL
+
+* Index Mapping
+.code -numbers index.go /START OMIT/,/END OMIT/ HLMAPPING
+
+* Create a New Index
+.code -numbers index.go /START OMIT/,/END OMIT/ HLNEW
+
+* Index Data
+.play -numbers index.go /START OMIT/,/END OMIT/ HLINDEX
+
+* Open Index
+.code -numbers search.go /START OMIT/,/END OMIT/ HLOPEN
+
+* Build Query
+.code -numbers search.go /START OMIT/,/END OMIT/ HLQUERY
+
+* Build Request
+.code -numbers search.go /START OMIT/,/END OMIT/ HLREQ
+
+* Search
+.play -numbers -edit search.go /START OMIT/,/END OMIT/ HLSEARCH
+
+* Query Strings
+
+Simple query language for humans
+
+.code query1.txt
+.code query2.txt
+
+* Optional HTTP Handlers
+.code http.go /START OMIT/,/END OMIT/
+- All major bleve operations mapped
+- Assume JSON document bodies
+- See bleve-explorer sample app
+ https://github.com/blevesearch/bleve-explorer
+.image bleve-explorer.png 217 728
+
+* GopherCon Site Search
+
+.image gopherconsearch.png 500 828
+
+* Join the Community 
+.image irc.png
+
+- #bleve is small/quiet room, talk to us real time
+
+.image google-groups.png
+
+- Discuss your use-case
+- Plan a feature implementation
+
+.image github.png 82 200
+
+- Apache License v2.0, Report Issues, Submit Pull Requests
+
+
